@@ -47,4 +47,11 @@ jobs:
         with:
           sdk: ${{ matrix.sdk }}
       - run: dart pub get
-      - run: dart test --platform vm,chrome
+      - run: dart pub global activate coverage
+      - run: dart test --platform vm,chrome --coverage="coverage"
+      - run: format_coverage --lcov --in=coverage --out=coverage/coverage.lcov --packages=.packages --report-on=lib
+      - name: Upload coverage to Codecov
+          uses: codecov/codecov-action@v1
+          with:
+            token: ${{ secrets.CODECOV_TOKEN }}
+            file: coverage/coverage.lcov
