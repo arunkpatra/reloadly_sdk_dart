@@ -1,4 +1,4 @@
-name: ci
+name: build
 
 on:
   # Run on PRs and pushes to the default branch.
