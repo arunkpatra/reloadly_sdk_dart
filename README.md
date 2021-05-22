@@ -5,7 +5,7 @@ A library for Dart developers.
 A simple usage example:
 
 ```dart
-import 'package:reloadly_sdk_dart/reloadly_sdk_dart.dart';
+import 'package:reloadly_sdk/reloadly_sdk.dart';
 
 main() {
   var awesome = new Awesome();

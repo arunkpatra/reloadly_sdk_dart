@@ -1,4 +1,4 @@
-import 'package:reloadly_sdk_dart/reloadly_sdk_dart.dart';
+import 'package:reloadly_sdk/reloadly_sdk.dart';
 import 'package:test/test.dart';
 
 void main() {
