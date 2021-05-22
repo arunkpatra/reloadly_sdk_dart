@@ -1,3 +1,7 @@
+# Reloadly Dart SDK
+
+[![build](https://github.com/arunkpatra/reloadly_sdk_dart/actions/workflows/ci.yml/badge.svg)](https://github.com/arunkpatra/reloadly_sdk_dart/actions/workflows/ci.yml)
+
 A library for Dart developers.
 
 ## Usage
